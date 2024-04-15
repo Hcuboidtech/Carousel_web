@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .main-div{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f7f8;
+            padding: 24px;
+            width: 100%;
+            height: auto;
+        }
+        .inner-div {
+            width: 640px;
+            padding: 40px 20px;
+            background-color: white;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-right: auto;
+            margin-left: auto
+        }
+        .confirm-button {
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 10px;
+            border: none;
+            background-color:#EFF2F5;
+            color: black;
+            font-weight: 600;
+                height: 46px;
+            font-size: 14px;
+            padding: 0px 15px 0px 15px;
+            cursor: pointer;
+        }
+        .confirm-button:hover {
+            cursor: pointer;
+        }
+        .email-logo {
+            height: 50px;
+            display: block;
+            margin: auto;
+        }
+        .email-title {
+            font-size: 28px;
+            line-height: 36px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .email-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+        .content {
+            width: 100%;
+            max-width: 540px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="inner-div">
+            <!-- <img class="email-logo" src="cid:nubod"> -->
+            <div class='content'>
+                <h2>Hello {{username}},</h2>
+                <!-- <h2 className='email-title'>Invite Team</h2> -->
+                <p>We're thrilled to announce the launch of our brand-new website, and we want you to be among the first to experience it!</p>
+                <a href='{{url}}' target="_blank" >
+                    <button class="btn btn-sm confirm-button">Website link</button>
+                </a>
+                <p>Thanks</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
