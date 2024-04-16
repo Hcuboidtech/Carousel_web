@@ -1,3 +1,0 @@
-1. npm init -y
-2. npm install express express-validator mysql2 dotenv jsonwebtoken bcrypt cookie-parser sequalize cors
-nodemailer
